@@ -1,0 +1,11 @@
+service: basic-serverless-lambda
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: dev
+  region: ap-south-1
+
+functions:
+  generateRandomNumber:
+    handler: src/handler.generateRandomNumber
