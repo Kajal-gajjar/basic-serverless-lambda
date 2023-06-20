@@ -10,4 +10,4 @@ functions:
   generateRandomNumber:
     handler: src/handler.generateRandomNumber
     timeout: 60 #seconds
-    memorySize: 64 #mb
+    memorySize: 128 #mb
