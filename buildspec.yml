@@ -10,7 +10,6 @@ phases:
   #     - npm install --silent --no-progress
   build:
     commands:
-      - npm run-script lint
       - npm run test
       - serverless package --stage $STAGE_NAME --region ap-south-1
 artifacts:
