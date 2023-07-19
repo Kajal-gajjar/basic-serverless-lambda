@@ -12,13 +12,7 @@ phases:
     commands:
       - npm run-script lint
       - npm run test
-      - mkdir -p target/stg
-      - mkdir target/prod
-      - serverless package --package target/stg --stage stg -v -r ap-south-1
-      - serverless package --package target/prod --stage prod -v -r ap-south-1
-
+      - serverless package --stage $STAGE_NAME --region ap-south-1
 artifacts:
   files:
-    - target/**/*
     - serverless.yml
-    - deploy.sh
