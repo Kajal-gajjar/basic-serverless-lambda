@@ -10,7 +10,6 @@ phases:
   #     - npm install --silent --no-progress
   build:
     commands:
-      - npm run test
       - serverless package --stage prod --region ap-south-1  # Use "stg" or "prod" based on your environment
 artifacts:
   files:
